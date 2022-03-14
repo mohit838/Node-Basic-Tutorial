@@ -18,9 +18,15 @@ const app = {};
 
 
 //Testing functions
-// data.create('test', 'newfile1', {name: 'test', file: 'newfile'}, (err) => {
+//File create
+// data.create('test', 'newfile2', {name: 'test', file: 'newfile'}, (err) => {
 //     console.log('Error was: ', err);
 // })
+
+//File read
+data.read('test', 'newfile1', (err, data) => {
+    console.log(err, data);
+})
 
 
 //Create Servery
