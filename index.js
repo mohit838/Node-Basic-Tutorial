@@ -11,9 +11,16 @@
 const http = require('http'); //HyperText Transfer Protocol
 const { handlerReqRes } = require('./helpers/handleReqRes');
 const environment = require('./helpers/environment');
+const data = require('./lib/data');
 
 //App object or App Scaffolding
 const app = {};
+
+
+//Testing functions
+// data.create('test', 'newfile1', {name: 'test', file: 'newfile'}, (err) => {
+//     console.log('Error was: ', err);
+// })
 
 
 //Create Servery
