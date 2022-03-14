@@ -3,7 +3,7 @@
 * Description: A RESTFul API to monitor up or down time of user defined links
 * Optional Description: Only Using Raw Node Js
 * Author: Mohammad Mohitul Islam
-* Date: 3/10/2022
+* Date: 3/14/2022
 */
 
 
@@ -17,16 +17,26 @@ const data = require('./lib/data');
 const app = {};
 
 
-//Testing functions
+//Testing CURD functions
 //File create
 // data.create('test', 'newfile2', {name: 'test', file: 'newfile'}, (err) => {
 //     console.log('Error was: ', err);
 // })
 
 //File read
-data.read('test', 'newfile1', (err, data) => {
-    console.log(err, data);
-})
+// data.read('test', 'newfile1', (err, data) => {
+//     console.log(err, data);
+// })
+
+//File Update
+// data.update('test', 'newfile1', {"name":"test","file":"newfile", "country":"BD"}, (err) => {
+//     console.log(err);
+// })
+
+//File Update
+// data.delete('test', 'newfile1', (err) => {
+//     console.log(err);
+// })
 
 
 //Create Servery
